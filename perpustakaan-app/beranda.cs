@@ -28,10 +28,7 @@ namespace perpustakaan_app
             var jml_pegawai = general.count_pegawai();
             var jml_pinjam = general.count_pinjam();
 
-            txt_jml_buku.Text = jml_buku;
-            txt_jml_member.Text = jml_member;
-            txt_jml_pegawai.Text = jml_pegawai;
-            txt_jml_pinjam.Text = jml_pinjam;
+           
         }
 
         private void update_statistik()
@@ -57,6 +54,16 @@ namespace perpustakaan_app
         }
 
         private void beranda_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_jml_member_TextChanged(object sender, EventArgs e)
         {
 
         }

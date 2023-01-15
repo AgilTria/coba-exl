@@ -156,7 +156,7 @@ namespace perpustakaan_app
 
         private void tentangToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Copyright 2019 Team Bahagia Universitas Amikom Yogyakarta \n\n  - Kahfi Baidowi\n  - Muhammad Hasan S J\n  - Muhammad Naufal\n\n--------------------------------\nApp Version  : 1.0\nOld Revision : 1 Januari 2019");
+            MessageBox.Show("Team GUI UNIVERSITAS AMIKOM YOGYAKARTA");
         }
 
         private void btn_profile_Click(object sender, EventArgs e)
@@ -186,5 +186,20 @@ namespace perpustakaan_app
             home.Show();
         }
 
+        private void status_nama_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Apakah anda yakin ingin Keluar Aplikasi.?", "Konfirmasi", MessageBoxButtons.YesNoCancel);
+            if (dr == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        
     }
 }

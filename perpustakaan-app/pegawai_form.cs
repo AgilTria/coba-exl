@@ -21,6 +21,10 @@ namespace perpustakaan_app
             InitializeComponent();
         }
 
+        public pegawai_form()
+        {
+        }
+
         private void btn_update_Click(object sender, EventArgs e)
         {
             peg.update_pegawai(txt_id.Text, txt_nama.Text, txt_alamat.Text, txt_telp.Text, txt_password.Text, cmb_level.Text, check_aktif.Checked);

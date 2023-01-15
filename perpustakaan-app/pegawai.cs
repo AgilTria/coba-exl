@@ -147,5 +147,15 @@ namespace perpustakaan_app
             pg.next();
             show_all_pegawai();
         }
+
+        private void dgv_data_pegawai_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void cmb_kategori_cari_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

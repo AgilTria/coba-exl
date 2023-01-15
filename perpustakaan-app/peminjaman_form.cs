@@ -25,6 +25,7 @@ namespace perpustakaan_app
 
         private void btn_simpan_pinjam_Click(object sender, EventArgs e)
         {
+            
             if (txt_idm.Text == "")
             {
                 MessageBox.Show("Lengkapi Semua Field Pada Form");

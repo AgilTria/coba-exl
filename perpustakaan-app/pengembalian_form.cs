@@ -142,5 +142,9 @@ namespace perpustakaan_app
             }
         }
 
+        private void txt_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -18,11 +18,6 @@ namespace perpustakaan_app
         {
             InitializeComponent();
 
-            pg.set_btnprev(btn_prev_page);
-            pg.set_btnnext(btn_next_page);
-            pg.set_toolpage(txt_page);
-            pg.set_labelpage(label_page);
-            pg.set_datalength(cmb_length.Text);
 
             tampil_buku();
         }
@@ -31,9 +26,9 @@ namespace perpustakaan_app
         {
             pg.all_data(book.count_search(cmb_kategori_cari.Text, txt_cari.Text));
             
-            var posisi = Convert.ToInt32(pg.num_filter)*(Convert.ToInt32(txt_page.Text)-1);
+            /*var posisi = Convert.ToInt32(pg.num_filter)*(Convert.ToInt32(txt_page.Text)-1);
             var result = book.search(cmb_kategori_cari.Text, txt_cari.Text, Convert.ToString(posisi), pg.num_filter.ToString());
-            data_update(result);
+            data_update(result);*/
 
             pg.btn_reset();
         }
@@ -145,6 +140,31 @@ namespace perpustakaan_app
                 }
                 tampil_buku();
             }
+        }
+
+        private void txt_cari_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_data_buku_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label_info_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_page_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_page_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
